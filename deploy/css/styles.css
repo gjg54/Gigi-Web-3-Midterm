@@ -322,10 +322,6 @@ template {
 /* =============
     Base
 ============= */
-.large-images {
-  width: 100%;
-}
-
 .container {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -334,6 +330,10 @@ template {
 
 .content {
   grid-area: content;
+}
+
+.large-images {
+  width: 100%;
 }
 
 /* =============
@@ -369,9 +369,108 @@ textarea {
 /* =============
     Footer
 ============= */
+@media (min-width: 768px) {
+  .footer.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "contact email socials";
+  }
+}
+@media (min-width: 1200px) {
+  .footer.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "contact both";
+  }
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.email {
+  grid-area: email;
+}
+
+.socials {
+  grid-area: socials;
+}
+
+.both {
+  grid-area: both;
+}
+
 /* =============
     search
 ============= */
-body {
-  background-color: lime;
+/* =============
+    cta
+============= */
+@media (min-width: 768px) {
+  .cta.content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "buy find";
+  }
+}
+@media (min-width: 1200px) {
+  .cta.content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "buy find";
+  }
+}
+
+.buy {
+  grid-area: buy;
+  background-color: black;
+  color: white;
+}
+
+.find {
+  grid-area: find;
+  background-color: red;
+  color: white;
+}
+
+/* =============
+    rerouts
+============= */
+@media (min-width: 768px) {
+  .rerouts.content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "defy products";
+  }
+}
+@media (min-width: 1200px) {
+  .rerouts.content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "defy products";
+  }
+}
+
+.defy {
+  grid-area: defy;
+}
+
+.products {
+  grid-area: products;
+}
+
+/* =============
+    new
+============= */
+@media (min-width: 768px) {
+  .new ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .new ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

@@ -1,0 +1,18 @@
+/* =============
+    new
+============= */
+
+.new{
+
+    ul{
+
+        @include md{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        @include xl{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}

@@ -1,3 +1,37 @@
 /* =============
     Footer
 ============= */
+
+.footer{
+
+  &.content{
+    @include md{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+      "contact email socials";
+    }
+    @include xl{
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: 
+      "contact both";
+    }
+  }
+}
+
+.contact{
+grid-area: contact;
+}
+
+.email{
+grid-area: email;
+}
+
+.socials{
+  grid-area: socials;
+  }
+
+.both{
+  grid-area: both;
+}

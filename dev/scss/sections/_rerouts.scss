@@ -1,0 +1,29 @@
+/* =============
+    rerouts
+============= */
+
+.rerouts{
+
+    &.content{
+      @include md{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "defy products";
+      }
+      @include xl{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "defy products";
+      }
+    }
+}
+
+.defy{
+  grid-area: defy;
+}
+
+.products{
+  grid-area: products;
+}

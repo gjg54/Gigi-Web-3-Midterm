@@ -1,0 +1,33 @@
+/* =============
+    cta
+============= */
+
+.cta{
+
+    &.content{
+      @include md{
+        display:grid;
+        grid-template-columns: 40% 60%;
+        grid-template-areas:
+        "buy find";
+      }
+      @include xl{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-areas: 
+        "buy find";
+      }
+    }
+}
+
+.buy{
+  grid-area: buy;
+  background-color: black;
+  color: white;
+}
+
+.find{
+  grid-area: find;
+  background-color: red;
+  color: white;
+}
