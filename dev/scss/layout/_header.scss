@@ -1,3 +1,25 @@
 /* =============
     Header
 ============= */
+
+.container{
+    display:grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas:
+    ". content ."
+    ;
+}
+
+.header-content{
+    grid-area: content;
+
+    @include sm{
+        padding: 15px;
+        text-align: center; 
+    }
+
+    @include md{
+        padding: 15px;
+        text-align: center;
+    }
+}

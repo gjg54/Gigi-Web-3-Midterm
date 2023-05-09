@@ -20,10 +20,55 @@
     }
 }
 
+.padding{
+
+    @include sm{
+        padding-left: 16px;
+        padding-top: 14px;
+        padding-bottom: 64px;
+        padding-right: 169px;
+    }
+
+    @include md{
+        padding-left: 21px;
+        padding-top: 32px;
+        padding-bottom: 68px;
+        padding-right: 160px;
+    }
+
+    @include lg{
+        padding-left: 17px;
+        padding-top: 25px;
+        padding-bottom: 60px;
+        padding-right: 276px;
+    }
+}
+
 .defy{
   grid-area: defy;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  text image;
 }
 
 .products{
   grid-area: products;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  text image;
+}
+
+.text{
+    grid-area: text;
+}
+
+.image{
+    grid-area: image;
+}
+
+.button{
+    grid-area: button;
+    background-color: red;
+    color: white;
+    text-decoration: none;
 }

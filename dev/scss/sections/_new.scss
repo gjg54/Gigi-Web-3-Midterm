@@ -6,13 +6,28 @@
 
     ul{
 
+        @include sm{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 37px
+        }
+        
         @include md{
             display: grid;
             grid-template-columns: 1fr 1fr;
+            gap: 37px;
         }
         @include xl{
             display:grid;
             grid-template-columns: 1fr 1fr 1fr;
+            gap: 37px;
+        }
+
+        .li{
+           padding-left: none; 
+           list-style: none;
+           border: 1px solid pink;
+           border-radius: 2px;
         }
     }
 }

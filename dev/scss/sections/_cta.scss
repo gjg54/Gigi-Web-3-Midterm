@@ -13,7 +13,7 @@
       }
       @include xl{
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 50% 50%;
         grid-template-areas: 
         "buy find";
       }
@@ -22,12 +22,75 @@
 
 .buy{
   grid-area: buy;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  words arrow;
   background-color: black;
   color: white;
 }
 
 .find{
   grid-area: find;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  words arrow;
   background-color: red;
   color: white;
 }
+
+.words{
+  grid-area: words;
+}
+
+.arrow{
+  grid-area: arrow;
+}
+
+.padding-words{
+
+  @include sm{
+    padding-left: 18px;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    padding-right: 184px;
+  }
+
+  @include md{
+    padding-left: 22px;
+    padding-top: 20px;
+    padding-bottom: 19px;
+    padding-right: 162px;
+  }
+
+  @include lg{
+    padding-left: 18px;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    padding-right: 245px;
+  }
+}
+
+.padding-arrow{
+
+  @include sm{
+    padding-left: 18px;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    padding-right: 184px;
+  }
+
+  @include md{
+    padding-left: 22px;
+    padding-top: 20px;
+    padding-bottom: 19px;
+    padding-right: 162px;
+  }
+
+  @include lg{
+    padding-left: 18px;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    padding-right: 245px;
+  }
+}
+
